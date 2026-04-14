@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 
-#[Fillable(['user_id', 'amount', 'status'])]
+#[Fillable(['amount', 'status'])]
 class Order extends Model
 {
     public function user(): BelongsTo
